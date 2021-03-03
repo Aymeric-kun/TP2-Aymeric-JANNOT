@@ -12,7 +12,12 @@ export class FormulaireComponent implements OnInit {
   click : string = "";
   prenom : string = "";
 
+
+  
+
   constructor() { }
+
+  listArticle : ["livre", "verre", "ordinateur", "bougie"]
 
   click1 () {
     console.log("click");

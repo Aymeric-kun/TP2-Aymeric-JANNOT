@@ -5,12 +5,14 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { FormulaireComponent } from './formulaire/formulaire.component';
 import { FormsModule } from '@angular/forms';
+import { AdresseComponent } from './adresse/adresse.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    FormulaireComponent
+    FormulaireComponent,
+    AdresseComponent
   ],
   imports: [
     BrowserModule, FormsModule

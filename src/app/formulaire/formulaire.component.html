@@ -2,9 +2,13 @@
 
 <button [disabled]="!valid1" (click)="click1()">Bouton 1</button>
 <button [disabled]="!valid2" (click)="click2()">Bouton 2</button>
-<br>
-<br>
-Prenom :
-<input [(ngModel)]="prenom">
 {{click}}
-{{prenom}}
+<br/>
+<br/>
+Prenom : {{prenom}}
+<input [(ngModel)]="prenom">
+
+<app-adresse  [prenom]="prenom"></app-adresse>
+
+<br/>
+<div *ngIf="prenom=='Aymeric'">Bonjour {{prenom}}</div>
