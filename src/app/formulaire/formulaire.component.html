@@ -1,0 +1,10 @@
+<p>Saisie du compte client</p>
+
+<button [disabled]="!valid1" (click)="click1()">Bouton 1</button>
+<button [disabled]="!valid2" (click)="click2()">Bouton 2</button>
+<br>
+<br>
+Prenom :
+<input [(ngModel)]="prenom">
+{{click}}
+{{prenom}}
